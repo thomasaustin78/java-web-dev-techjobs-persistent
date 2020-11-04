@@ -11,4 +11,11 @@ public class Skill extends AbstractEntity {
     }
     @Size(max = 800, message = "Too long")
     private String description;
+
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description=description;
+    }
 }

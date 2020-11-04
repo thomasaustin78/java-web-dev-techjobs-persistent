@@ -39,7 +39,7 @@ public class SkillController {
             }
         }
 
-        @GetMapping("view/{skillId}")
+        @GetMapping({"view/{skillId}"})
         public String displayViewSkill(Model model, @PathVariable int skillId) {
 
             Optional optSkill = skillRepository.findById(skillId);
